@@ -7,9 +7,17 @@
     <title>Results!</title>
 </head>
 <body>
-    <h4>Thank you for your submission!</h4>
-    <form action='/' method='post'>
-        <input id='go_back' type='submit' value='Go Back'>
+
+    <div class="thankyou_card">
+        <h2>Thank you for your submission!</h4>
+        <h4>Results:</h4>
+        <p class="card-text">Name: {{session['name']}}</p>
+        <p class="card-text">Email: {{session['email']}}</p>
+        <p class="card-text">Favorite Language: {{session['role']}}</p>
+        <p class="card-text">Comments: {{session['comments']}}</p>
+
+    </div>
+
     </form>
 </body>
 </html>
